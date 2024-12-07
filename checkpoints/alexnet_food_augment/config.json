@@ -1,0 +1,7 @@
+{
+    "dataset": "food",
+    "learning_rate": 0.01,
+    "batch_size": 64,
+    "num_epochs": 30,
+    "model_path": "checkpoints/alexnet_food_augment"
+}
