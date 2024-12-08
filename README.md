@@ -17,6 +17,17 @@ The structure of the networks are shown below:
 
 ![](figure/network.png)
 
+## Dataset
+
+After downloading the food dataset and the skin disease dataset , organize the data as follows in `./data`:
+
+```
+data
+├── 皮肤病数据集
+├── Food-101-archive
+└── playground
+```
+
 ## Training
 
 We train each model with batch size 64, learning rate 0.01, and number of epochs 30. The results are shown in the following table.
@@ -40,6 +51,8 @@ python train.py \
     --batch_size 64 \
     --num_epochs 30
 ```
+
+If the model path is specified, then the checkpoint will be saved as `model.pth` in the model path. Otherwise the checkpoint will be saved as `./checkpoints/{model_name}_{dataset}/model.pth`.
 
 ## Evaluation
 
